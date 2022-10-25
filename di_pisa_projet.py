@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 
 #Import du csv
 data = pd.read_csv("fighters.csv")
-st.write(df) 
+st.write(data) 
 
 """**Jeu de données** : Matches de Boxe
 
