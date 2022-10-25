@@ -35,7 +35,7 @@ def load_keywords_fromfile():
 
 #Continue
 data_wins = load_keywords_fromfile() 
-print(data_wins)
+data_wins
 nb = sb.relplot(data=data_wins, x="wins", y="height")
 st.pyplot(nb)
 
