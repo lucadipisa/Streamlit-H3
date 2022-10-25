@@ -14,12 +14,7 @@ import seaborn as sb
 import numpy as np
 import matplotlib.pyplot as plt
 
-#Import du csv
-filename = r'/fighters.csv'
-import csv
-open(filename)
-data = pd.read_csv(r'/fighters.csv');
-data
+
 
 """**Jeu de données** : Matches de Boxe
 
