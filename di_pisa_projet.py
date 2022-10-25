@@ -21,7 +21,7 @@ def load_keywords_fromfile():
     data = handle.read() 
   # reconstructing the data as dictionary 
   lst_keywords_byclass = pickle.loads(data) 
-  return lst_keywords_byclass
+  
 
 """**Jeu de données** : Matches de Boxe
 
@@ -33,7 +33,8 @@ def load_keywords_fromfile():
 """
 
 #Continue
-data_wins = data.sample(n=200)
+data_wins = load_keywords_fromfile() 
+data_wins
 nb = sb.relplot(data=data_wins, x="wins", y="height")
 st.pyplot(nb)
 
