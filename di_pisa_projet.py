@@ -28,8 +28,7 @@ st.write(data)
 """
 
 #Continue
-data_wins = load_keywords_fromfile() 
-data_wins
+data_wins = data.sample(n=200)
 nb = sb.relplot(data=data_wins, x="wins", y="height")
 st.pyplot(nb)
 
