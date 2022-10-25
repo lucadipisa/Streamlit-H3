@@ -15,11 +15,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #Import du csv
-filename = r'/content/drive/MyDrive/Colab/fighters.csv'
-import csv
-open(filename)
-data = pd.read_csv(r'/content/drive/MyDrive/Colab/fighters.csv');
-data
+data = pd.read_csv("fighters.csv")
+st.write(df) 
 
 """**Jeu de données** : Matches de Boxe
 
