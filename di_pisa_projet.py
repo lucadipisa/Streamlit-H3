@@ -15,14 +15,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #Import du csv
-def load_keywords_fromfile():
-  # reading the dictionnary des 15 keyword
-  with open('fighter.csv', 'rb') as handle: 
-    data = handle.read() 
-  # reconstructing the data as dictionary 
-  lst_keywords_byclass = pickle.loads(data) 
-  return lst_keywords_byclass 
-  
+filename = r'/content/drive/MyDrive/Colab/fighters.csv'
+import csv
+open(filename)
+data = pd.read_csv(r'/content/drive/MyDrive/Colab/fighters.csv');
+data
 
 """**Jeu de données** : Matches de Boxe
 
