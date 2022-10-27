@@ -19,7 +19,8 @@ Push an image to a registry
 docker push myrepo/myimage:2.0 
 
 Run a container 
-docker container run --name 
+docker container run --name
+docker run -dp PORT:PORT name
 
 Stop a running container through SIGTERM
 docker container stop web
